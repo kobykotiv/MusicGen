@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>[K.I.M.G.] Koby's Interactive Music Generator</title>
+
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+ 
+  
+  
+
+    <header id="intro">
+  <section>
+    <h1>Köby's Interactive Music Generator
+	<h1> (˳^ -^)˳ ♬♪♫ ˳(^- ^˳)</h1>
+	</h1>
+    <p>
+      This will infinitely generate a song based on the <em>seed</em> that you provide it with. 
+      Procedural generation ensures that the song will always be the exact 
+      same song for the seed data you provide, but will be unique to any other seed.
+    </p>
+    <p>
+      You can use the preloaded seed, or just type anything into textbox below. Press <em>load</em> to generate your song.
+     </p>
+    <input id="seed" type="text" placeholder="Seed" />
+	
+	
+    <button id="load">Load</button><br>
+    
+	<p>
+	You can also name the song you generated using the box below.
+	</p>
+	<input id="TheSongName" type="text" placeholder="Song name (optional)"/> 
+	
+  </section>    
+</header>
+
+<main>
+  <button id="play">Play</button><br>
+  <p id="midi"></p>
+  <section id="staff-container">
+    <div id="staff"></div>
+  </section>
+</main>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js'></script>
+	<script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/Tone.min.js'></script>
+	<script src='http://cdn.rawgit.com/paulrosen/abcjs/master/bin/abcjs_basic_2.0-min.js'></script>
+
+        <script src="js/index.js"></script>    
+  </body>
+</html>
